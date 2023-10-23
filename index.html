@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+   
+    <script type="text/babel">
+
+        
+      const rootelement = document.querySelector("#root");
+      
+        const root = ReactDOM.createRoot(rootelement)
+
+         function Paragraph(){
+            return(
+                <div>
+                <h1>LEARN REACT</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, repellat fugiat ea rem exercitationem accusantium tenetur dignissimos deserunt error eius, soluta modi, quibusdam quia. Repellat neque illo corrupti mollitia harumas <a href="https://www.google.com/" target="_blank">This is the google link </a> laborum voluptates! Deleniti odit sint aspernatur nihil delectus, quos, perspiciatis necessitatibus error fuga consequuntur fugit tenetur nostrum.</p>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi suscipit sunt asperiores iure, dolore officia. Et praesentium delectus tempore ipsam deleniti voluptate temporibus obcaecati, non, eos doloribus minima omnis neque?</p>
+                </div>
+                )
+         }
+         root.render(<Paragraph/>)
+
+     </script>
+</body>
+</html>
